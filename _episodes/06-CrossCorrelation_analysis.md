@@ -22,7 +22,7 @@ import pytraj as pt
 import nglview as nv
 import numpy as np
 import matplotlib.pyplot as plt
-#import seaborn as sns
+import seaborn as sns
 
 %cd ~/workshop_pytraj/example_02
 ~~~
@@ -85,7 +85,6 @@ corrmat=pt.atomiccorr(traj, mask=":50-150 and not hydrogen")
 - Set center of the color scale to 0
 
 ~~~
-plt.imshow(corrmat, cmap='hot', interpolation='nearest')
 sns.heatmap(corrmat, center=0, xticklabels=5, yticklabels=5, square=True)
 ~~~
 {: .language-python}

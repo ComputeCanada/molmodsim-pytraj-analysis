@@ -47,7 +47,6 @@ Python interacts with Jupyter Notebook servers through IPython kernels. When we 
 module load StdEnv/2023 amber 
 virtualenv env-pytraj
 source env-pytraj/bin/activate
-pip install -U pip
 pip install nglview==3.1.4 seaborn
 cp -r ~/env-pytraj/share/jupyter ~/.local/share/
 python -m ipykernel install --user --name=env-pytraj
