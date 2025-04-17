@@ -176,7 +176,6 @@ fig, (ax1,ax2) = plt.subplots(2, figsize=(9,9))
 - Plot correlation map for frames 1-500 (axis ax1)
 - First plot positive correlations (vmin=0), then negative (vmax=0)
 
-
 ~~~
 sns.heatmap(corrmat1, mask=maskl, cmap=cmap, center=0.0,vmin=0.0,
             square=True, xticklabels=2, yticklabels=2, ax=ax1)
