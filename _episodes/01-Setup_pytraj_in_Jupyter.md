@@ -42,6 +42,7 @@ Python interacts with Jupyter Notebook servers through IPython kernels. When we 
 
 - Connect to the training cluster using SSH.
 - Run the following commands:
+
 ~~~
 module load StdEnv/2023 amber 
 virtualenv env-pytraj
