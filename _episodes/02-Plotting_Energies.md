@@ -46,9 +46,8 @@ EOF
 ### Plotting energy components
 Read the data saved in the file *`energy.dat`* into a pandas dataframe and plot it:
 ~~~
-df=pd.read_table('energy.dat', delim_whitespace=True)
-df.columns=["Time", "Etot", "Temp", "Press", "Volume"]
-df.plot(subplots=True, x="Time", xlabel="Time, ps", figsize=(6, 8))
+df=pd.read_table("energy.dat", sep="\s+") 
+df.plot(subplots=True, x="#Time", xlabel="Time, ps", figsize=(6, 8))
 plt.show()
 ~~~
 {: .language-python}

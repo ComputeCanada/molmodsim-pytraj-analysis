@@ -93,18 +93,6 @@ view2.add_hyperball(':B or :C and not hydrogen', colorScheme="element")
 ~~~
 {: .language-python}
 
-Change animation speed and step
-~~~
-view2.player.parameters = dict(delay=0.5, step=1)
-~~~  
-{: .language-python}
-
-Make animation smoother
-~~~
-view.player.interpolate = True
-~~~  
-{: .language-python}
-
 Try visualizing different atom selections. Selection language is described [here](https://nglviewer.org/ngl/api/manual/usage/selection-language.html)
 
 - You can use GUI

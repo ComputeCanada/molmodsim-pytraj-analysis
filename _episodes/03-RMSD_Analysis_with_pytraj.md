@@ -120,10 +120,9 @@ print(traj(0,20,4)) # Creates frame iterator with (start, stop, step)
 import pytraj as pt
 import numpy as np
 from matplotlib import pyplot as plt
-import seaborn as sns
 import pickle
 
-cd ~/workshop_pytraj/example_02
+%cd ~/workshop_pytraj/example_02
 ~~~
 {: .language-python}
 
@@ -179,8 +178,6 @@ rmsd=data.get('RMSD_00001')
 
 Set `*seaborn*` plot theme parameters and plot the data:
 ~~~
-sns.set_theme()
-sns.set_style("darkgrid")
 time=np.linspace(0,3.139,3140)
 plt.plot(time,rmsd)
 plt.xlabel("Time, ns")

@@ -32,8 +32,6 @@ All PCA steps are performed automatically by the *`pca`* module of *`ptraj`*.
 ~~~
 import pytraj as pt
 import nglview as nv
-import numpy as np
-import parmed
 from matplotlib import pyplot as plt
 
 %cd ~/workshop_pytraj/example_02
@@ -89,7 +87,7 @@ When you look at such plot and see two or more clusters this means that several 
 
 Download the file "modes.nmd"
 ~~~
-scp user100@moledyn.ace-net.training:workshop_pytraj/example_02/modes.nmd .
+scp user100@md-workshop.ace-net.training:workshop_pytraj/example_02/modes.nmd .
 ~~~
 {: .language-bash}
 
